@@ -1,0 +1,42 @@
+.page-header {
+  position: relative;
+
+  @media (min-width: @desktop_width) {
+    margin-bottom: 80px;
+
+    &--index {
+      margin-bottom: 113px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -100;
+        width: 50%;
+        height: 696px;
+        background-color: #64a83b;
+        background-image: url("../img/poster/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+
+        @media (min-resolution: @retina_dpi), (min-resolution: @retina_dppx) {
+          background-size: 720px 696px;
+          background-image: url("../img/poster/index-background-desktop@2x.jpg");
+        }
+      }
+
+      .site-list__link {
+        color: #ffffff;
+
+        &--active {
+          border-color: #ffffff;
+        }
+      }
+
+      nav {
+        padding-top: 63px;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.btn {
+  display: inline-block;
+  width: 280px;
+  padding: 14px 0 11px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: @color_leaf;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: @tablet_width) {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+// .btn:hover,
+// .btn:focus {
+// }
+
+// .btn:active {
+// }
+
+.btn__poster {
+  margin: auto;
+
+  @media (min-width: @tablet_width) {
+    order: 1;
+    margin-left: 90px;
+  }
+
+  @media (min-width: @desktop_width) {
+    margin: 0;
+  }
+}
+
+.btn__form-program {
+  margin: 0 auto;
+  border: none;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet_width) {
+    margin: 0;
+    margin-right: 60px;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 570px;
+  }
+}
+
+.btn__catalog-order {
+  align-self: center;
+  margin: 0 auto;
+
+  @media(min-width: @tablet_width) {
+    margin: 0 40px;
+  }
+}
+
+.btn__catalog-more {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color_text;
+  background-color: @color_grey;
+
+  @media(min-width: @tablet_width) {
+    margin: 0 40px;
+  }
+}
+
+.btn__goods-order {
+  font-size: 16px;
+  line-height: 20px;
+
+  @media(min-width: @tablet_width) {
+    width: 100%;
+  }
+
+  @media (min-width: @desktop_width) {
+    width: 245px;
+  }
+}

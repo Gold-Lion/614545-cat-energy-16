@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  li {
+    display: flex;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: @tablet_width) {
+    width: 140px;
+    border: none;
+  }
+}
+
+.social__link {
+  display: flex;
+  margin: auto;
+  padding: 5px;
+
+  svg {
+    fill: #666666;
+  }
+
+  @media (min-width: @tablet_width) {
+    &--vk svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

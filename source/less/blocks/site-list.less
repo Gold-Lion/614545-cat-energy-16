@@ -1,0 +1,48 @@
+.site-list {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+
+  @media (min-width: @tablet_width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      align-self: center;
+      margin-right: 36px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.site-list__link {
+  display: block;
+  padding: 24px;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: @color_black;
+  text-transform: uppercase;
+  border-bottom: 1px solid @color_grey;
+
+  @media (min-width: @tablet_width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+
+    &--active {
+      border-bottom: 2px solid @color_leaf;
+    }
+  }
+
+  @media (min-width: @desktop_width) {
+    color: @color_black;
+
+    &--active {
+      border-color: @color_leaf;
+    }
+  }
+}
